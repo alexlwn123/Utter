@@ -6,7 +6,6 @@ from bs4 import BeautifulSoup
 def number_trivia(number: str):
     operation = random.choice(["math", "trivia"])
     url = f"http://numbersapi.com/{number}/{operation}"
-    print(url)
     reply = re.get(url)
     print(reply.text)
 
